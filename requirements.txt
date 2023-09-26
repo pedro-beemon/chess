@@ -1,0 +1,10 @@
+numpy
+pandas
+Pillow
+pytest
+iPython
+requests
+stockfish
+black
+pi74HC595==1.2.3
+opencv-python==4.3.0.38
