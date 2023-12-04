@@ -1,7 +1,7 @@
 from stockfish import Stockfish
 
 
-stockfish = Stockfish(path='/usr/local/bin/stockfish')
+stockfish = Stockfish(path='stockfish/stockfish-ubuntu-x86-64')
 stockfish.make_moves_from_current_position(['e2e3']) # bot
 stockfish.make_moves_from_current_position(['a7a6']) # player
 stockfish.make_moves_from_current_position(['e3e4']) # bot
