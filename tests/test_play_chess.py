@@ -2,14 +2,14 @@ from ultralytics import YOLO
 import cv2
 import numpy as np
 
-model = YOLO("model_.onnx")
+model = YOLO("data/model_.onnx")
 
-img = cv2.imread("pos1.jpg")
+img = cv2.imread("tests/fixtures/pos1.jpg")
 results = model.predict(source=img)  # save predictions as labels
 
 assert len(results[0].boxes) == 32
 
-img = cv2.imread("pos2.jpg")
+img = cv2.imread("tests/fixtures/pos2.jpg")
 results = model.predict(source=img)  # save predictions as labels
 
 print(results)
@@ -77,7 +77,7 @@ y = min_peca.y - int(min_peca.h / 2)
 h = max_peca.y - min_peca.y + min_peca.h
 
 # Cropping an image
-img = cv2.imread("pos1.jpg")
+img = cv2.imread("tests/fixtures/pos1.jpg")
 crop_img = img[y : y + h, x : x + w]
 crop_vert = x, y, w, h
 img = crop_img.copy()
@@ -136,7 +136,7 @@ for peca in pecas:
 last_frame = frame_matrix.copy()
 frame_matrix = zeros_matrix.copy()
 
-img = cv2.imread("pos2.jpg")
+img = cv2.imread("tests/fixtures/pos2.jpg")
 # img = img[y : y + h, x : x + w]
 # img = crop_img.copy()
 results = model.predict(source=img)  # save predictions as labels
