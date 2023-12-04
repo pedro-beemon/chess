@@ -1,5 +1,5 @@
-# from pi74HC595 import pi74HC595
-# import RPi.GPIO as gpio
+from pi74HC595 import pi74HC595
+import RPi.GPIO as gpio
 import multiprocessing, time
 
 

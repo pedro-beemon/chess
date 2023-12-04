@@ -25,3 +25,5 @@ opencv_createsamples -info pos.dat -w 24 -h 24 -num 1000 -vec pos.vec
 opencv_traincascade -data cascade/ -vec pos.vec -bg neg.txt -w 24 -h 24 -numPos 200 -numNeg 100
 
 opencv_traincascade -data cascade/ -vec pos.vec -bg neg.txt -w 24 -h 24 -numPos 20 -numNeg 500 -numStages 10
+
+base64 negativas/1701128875.2898896.jpg | curl -d @- "https://detect.roboflow.com/chess-4jvm8/1?api_key=Yc9P3iOmEuSts3mFZLd3"

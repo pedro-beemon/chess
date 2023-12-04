@@ -1,3 +1,5 @@
+
+
 while True:
     #liga todos os leds, apresentação
 
