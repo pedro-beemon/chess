@@ -173,4 +173,3 @@ stockfish = Stockfish(path='stockfish/stockfish-ubuntu-x86-64')
 
 stockfish.make_moves_from_current_position([command])  # bot
 print(stockfish.get_board_visual())
-cv2.imwrite("Image.jpg", img)
