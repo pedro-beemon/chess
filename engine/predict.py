@@ -58,7 +58,6 @@ def get_command(modify_frame):
     command = f'{old}{new}'
     return command
 
-
 def get_area(pecas):
     max_peca = max(pecas)
     min_peca = min(pecas)
